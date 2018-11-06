@@ -1,0 +1,19 @@
+{
+  "sourceMaps": "inline",
+  "plugins": [
+    ["module-resolver", {
+      "root": [ "." ],
+      "alias": {
+        "^@(.+)": "./src/\\1"
+      }
+    }]
+  ],
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }],
+    "stage-3"
+  ]
+}
